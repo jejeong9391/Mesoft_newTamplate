@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <title>MeSoft</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<script>
+    function txt_box() {
+        var con = document.getElementById("txt_box");
+        con.style.display = (con.style.display != 'none') ? "none" : "block";
+    }
+    
+    function img_btn(chk){
+       // banner_btn
+         var img1 = document.getElementById("img1");
+        var img2 = document.getElementById("img2");
+        if(chk==1){
+            img1.style.display = "block";
+            img2.style.display = "none";
+        }else{
+            img2.style.display = "block";
+            img1.style.display = "none";
+            
+        }
+        
+        
+        
+      //  img2.style.display = (img1.style.display != 'none') ? "none" : "block";
+        
+    }
+</script>
+
+<body>
+    <div id="txt_box" style="width: 260px;  position: fixed; right: 20px; top: 80px; border: 1px solid black; display: none;padding: 10px;">
+        <p>1. 쓸데없는 파일 정리필요 <br />- 메뉴별 html파일이 별개로 있음. <br />
+            - 메뉴 클릭 시, 페이지 이동이 아닌 index 스크롤 이동하도록 변경필요 <br /> <br />
+            2. contact us Section 생성 필요 <br />- 너무 작게 있음
+            <br /><br />
+            3. mesoft 로고img 필요</p>
+    </div>
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+        <div class="main_menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container box_1620">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav menu_nav justify-content-center">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="services.html">Services</a>
+                                <!--
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="price.html">Pricing</a>
+                                    <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item submenu dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+-->
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="nav-item"><a href="#" class="tickets_btn" onclick="txt_box();">Free Trial</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    <section class="home_banner_area">
+        <div class="banner_inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="banner_content">
+                            <h2>당신의 비즈니스와 <br />함께합니다.</h2>
+                            <p>세상의 모든 사람들에게 편리함과 풍부한 서비스 경험을 드리기 위해 노력하는 우리의 의지가 담겨있습니다.</p>
+                            <a class="banner_btn" href="#" onclick="img_btn();">Get Started</a>
+                            <a class="banner_btn2" href="#"  onclick="img_btn(1);">Download</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="home_left_img">
+                            <img id= "img1" class="img-fluid" src="img/banner/home-left-1.png" alt="" >
+                            <img id= "img2" class="img-fluid" src="img/banner/cs-img.png" alt="" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Home Banner Area =================-->
+
+    <!--================Work Area =================-->
+    <section class="work_area p_120">
+        <div class="container">
+            <div class="main_title">
+                <h2>How It work for you</h2>
+                <p>고객 비즈니스의 특수성에 집중하여 보편적인 비즈니스 솔루션으로 <br/>해결하기 어려운 문제를 도와드립니다.</p>
+            </div>
+            <div class="work_inner row">
+                <div class="col-lg-4">
+                    <div class="work_item">
+                        <i class="lnr lnr-screen"></i>
+                        <a href="#">
+                            <h4>매출관리에 필요한 모든 것</h4>
+                        </a>
+                        <p>다양한 업종의 고유 업무 프로세스를 분석하여 <br/>바로 도입 가능한 형태로 준비한 소프트웨어 입니다.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="work_item">
+                        <i class="lnr lnr-code"></i>
+                        <a href="#">
+                            <h4>서비스 분야 및 전문성</h4>
+                        </a>
+                        <p>보안 요구 사항에 적합한 aws 클라우드를 사용하여 보다 안전하게 데이터를 관리합니다.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="work_item">
+                        <i class="lnr lnr-clock"></i>
+                        <a href="#">
+                            <h4>혁신의 속도</h4>
+                        </a>
+                        <p>고객의 피드백에 기반한 빠른 혁신속도로 시장상황에 빠르게 대응할 수 있는 민첩성을 통해 <br/>비지니스를 혁신할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Work Area =================-->
+    <style>
+        /*2021-05-02 수정*/
+        .made_life_inner .nav.nav-tabs {
+            border: none;
+            display: flex;
+            flex-wrap: nowrap;
+            margin-left: -15px;
+            margin-right: -15px;
+            flex-direction: row;
+            justify-content: center;
+        }
+    </style>
+    <!--================Made Life Area =================-->
+    <section class="made_life_area p_120">
+        <div class="container">
+            <div class="made_life_inner">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <!--
+						<li class="nav-item">
+						<a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Easy to use</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Unlimited Colors</a>
+						</li>
+-->
+                    <li class="nav-item">
+                        <a class="nav-link active" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">PC 프로그램</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="edge-tab" data-toggle="tab" href="#edge" role="tab" aria-controls="edge" aria-selected="false">모바일 앱</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="row made_life_text">
+                            <div class="col-lg-6">
+                                <div class="left_side_text">
+                                    <h3>We’ve made a life <br />that will change you</h3>
+                                    <h6>We are here to listen from you deliver exellence</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                                    <a class="main_btn" href="#">Get Started Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="chart_img">
+                                    <img class="img-fluid" src="img/chart.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="row made_life_text">
+                            <div class="col-lg-6">
+                                <div class="left_side_text">
+                                    <h3>We’ve made a life <br />that will change you</h3>
+                                    <h6>We are here to listen from you deliver exellence</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                                    <a class="main_btn" href="#">Get Started Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="chart_img">
+                                    <img class="img-fluid" src="img/chart.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="row made_life_text">
+                            <div class="col-lg-6">
+                                <div class="left_side_text">
+                                    <h3>We’ve made a life <br />that will change you</h3>
+                                    <h6>We are here to listen from you deliver exellence</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                                    <a class="main_btn" href="#">Get Started Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="chart_img">
+                                    <img class="img-fluid" src="img/chart.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="edge" role="tabpanel" aria-labelledby="edge-tab">
+                        <div class="row made_life_text">
+                            <div class="col-lg-6">
+                                <div class="left_side_text">
+                                    <h3>We’ve made a life <br />that will change you</h3>
+                                    <h6>We are here to listen from you deliver exellence</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                                    <a class="main_btn" href="#">Get Started Now</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="chart_img">
+                                    <img class="img-fluid" src="img/chart.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Made Life Area =================-->
+
+    <!--================Screen Area =================-->
+<!--
+    <section class="screen_area text-center p_120">
+        <div class="container">
+            <div class="main_title">
+                <h2>Unique Screens that work perfectly</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+            <img class="img-fluid" src="img/banner/home-left-1.png" alt="">
+        </div>
+    </section>
+-->
+    <!--================End Screen Area =================-->
+
+    <!--================Made Life Area =================-->
+<!--
+    <section class="made_life_area p_120">
+        <div class="container">
+            <div class="made_life_inner">
+                <div class="row made_life_text">
+                    <div class="col-lg-6">
+                        <div class="left_side_text">
+                            <h3>We’ve made a life <br />that will change you</h3>
+                            <h6>We are here to listen from you deliver exellence</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                            <a class="main_btn" href="#">Get Started Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="chart_img">
+                            <img class="img-fluid" src="img/browser.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!--================End Made Life Area =================-->
+
+    <!--================Price Area =================-->
+   <!-- <section class="price_area p_120">
+        <div class="container">
+            <div class="main_title">
+                <h2>Choose Your Price Plan</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+            <div class="price_inner row">
+                <div class="col-lg-4">
+                    <div class="price_item">
+                        <div class="price_head">
+                            <h4>Real Basic</h4>
+                        </div>
+                        <div class="price_body">
+                            <ul class="list">
+                                <li><a href="#">2.5 GB Space</a></li>
+                                <li><a href="#">Secure Online Transfer</a></li>
+                                <li><a href="#">Unlimited Styles</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="price_footer">
+                            <h3><span class="dlr">$</span> 39 <span class="month">Per <br />Month</span></h3>
+                            <a class="main_btn" href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="price_item">
+                        <div class="price_head">
+                            <h4>Real Standard</h4>
+                        </div>
+                        <div class="price_body">
+                            <ul class="list">
+                                <li><a href="#">10 GB Space</a></li>
+                                <li><a href="#">Secure Online Transfer</a></li>
+                                <li><a href="#">Unlimited Styles</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                            </ul>
+                        </div>
+                        <div class="price_footer">
+                            <h3><span class="dlr">$</span> 69 <span class="month">Per <br />Month</span></h3>
+                            <a class="main_btn" href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="price_item">
+                        <div class="price_head">
+                            <h4>Real Ultimate</h4>
+                        </div>
+                        <div class="price_body">
+                            <ul class="list">
+                                <li><a href="#">Unlimited Space</a></li>
+                                <li><a href="#">Secure Online Transfer</a></li>
+                                <li><a href="#">Unlimited Styles</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="price_footer">
+                            <h3><span class="dlr">$</span> 99 <span class="month">Per <br />Month</span></h3>
+                            <a class="main_btn" href="#">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!--================End Price Area =================-->
+
+    <!--================Testimonials Area =================-->
+    <section class="testimonials_area p_120" style="background: #ffffff;">
+        <div class="container">
+            <div class="main_title">
+                <h2>Feedback from Customers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+            <div class="testi_slider owl-carousel">
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                                <h4>Mark Alviro Wiens</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="img/testimonials/testi-2.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                                <h4>Mark Alviro Wiens</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                                <h4>Mark Alviro Wiens</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="img/testimonials/testi-2.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                                <h4>Mark Alviro Wiens</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="img/testimonials/testi-1.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                                <h4>Mark Alviro Wiens</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testi_item">
+                        <div class="media">
+                            <div class="d-flex">
+                                <img src="img/testimonials/testi-2.png" alt="">
+                            </div>
+                            <div class="media-body">
+                                <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.</p>
+                                <h4>Mark Alviro Wiens</h4>
+                                <div class="rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-half-o"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================End Testimonials Area =================-->
+
+    <!--================Made Life Area =================-->
+<!--
+    <section class="made_life_area made_white p_120">
+        <div class="container">
+            <div class="made_life_inner">
+                <div class="row made_life_text">
+                    <div class="col-lg-6">
+                        <div class="chart_img">
+                            <img class="img-fluid" src="img/banner/home-left-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="left_side_text">
+                            <h3>We’ve made a life <br />that will change you</h3>
+                            <h6>We are here to listen from you deliver exellence</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                            <a class="main_btn" href="#">Get Started Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+-->
+    <!--================End Made Life Area =================-->
+
+    <!--================Impress Area =================-->
+    <section class="impress_area p_120">
+        <div class="container">
+            <div class="impress_inner">
+                <h2>Got Impressed to our features?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <a class="banner_btn2" href="#">Request Free Demo</a>
+            </div>
+        </div>
+    </section>
+    <!--================End Impress Area =================-->
+
+    <!--================Footer Area =================-->
+    <footer class="footer_area p_120">
+        <div class="container">
+            <div class="row footer_inner">
+                <div class="col-lg-5 col-sm-6">
+                    <aside class="f_widget ab_widget">
+                        <div class="f_title">
+                            <h3>About Me</h3>
+                        </div>
+                        <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
+                        <p>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </aside>
+                </div>
+                <div class="col-lg-5 col-sm-6">
+                    <aside class="f_widget news_widget">
+                        <div class="f_title">
+                            <h3>Newsletter</h3>
+                        </div>
+                        <p>Stay updated with our latest trends</p>
+                        <div id="mc_embed_signup">
+                            <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                <div class="input-group d-flex flex-row">
+                                    <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                    <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>
+                                </div>
+                                <div class="mt-10 info"></div>
+                            </form>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-lg-2">
+                    <aside class="f_widget social_widget">
+                        <div class="f_title">
+                            <h3>Follow Me</h3>
+                        </div>
+                        <p>Let us be social</p>
+                        <ul class="list">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
+    <script src="vendors/counter-up/jquery.counterup.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
+</body></html>
